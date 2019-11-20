@@ -1,4 +1,4 @@
-import { CREATE_MESSAGE } from '../../constants'
+import { CREATE_MESSAGE, CREATE_MESSAGE_ERROR } from '../../constants'
 const initState = {
   messages: [
     {id: '1', title: 'trade with me', content: 'why not?'},
@@ -11,8 +11,11 @@ const messageReducer = (state = initState, action) => {
   switch(action.type) {
     case CREATE_MESSAGE:
       console.log('created message', action.message)
+      return state;
+    case CREATE_MESSAGE_ERROR:
+      console.log("message reducer errro", action.err)
+      return state;
   }
-  return state
 }
 
 export default messageReducer
