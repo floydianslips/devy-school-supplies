@@ -13,9 +13,10 @@ const messageReducer = (state = initState, action) => {
       console.log('created message', action.message)
       return state;
     case CREATE_MESSAGE_ERROR:
-      console.log("message reducer errro", action.err)
+      console.log("message reducer error", action.err)
       return state;
   }
+  return state
 }
 
 export default messageReducer

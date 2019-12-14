@@ -6,7 +6,7 @@ import PlayerDetails from './components/players/PlayerDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp  from './components/auth/SignUp'
 import CreateMessage from './components/messages/CreateMessage'
-
+import MessageDetails from './components/messages/MessageDetails'
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +17,8 @@ function App() {
           <Route path='/players/:id' component={ PlayerDetails } />
           <Route path='/signin' component={ SignIn } />
           <Route path='/signup' component={ SignUp } />
-          <Route path= '/create' component={ CreateMessage } />
+          <Route path='/create' component={ CreateMessage } />
+          <Route path='/messages/:id' component={ MessageDetails } />
         </Switch>
       </div>
     </BrowserRouter>

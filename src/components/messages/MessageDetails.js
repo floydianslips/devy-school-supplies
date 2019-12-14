@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PlayerDetails = (props) => {
+const MessageDetails = (props) => {
   // console.log(props)
   const id = props.match.params.id;
   return (
@@ -18,4 +18,4 @@ const PlayerDetails = (props) => {
   )
 }
 
-export default PlayerDetails
+export default MessageDetails
